@@ -1,0 +1,27 @@
+{
+  "name": "healthcheck-express-client",
+  "version": "0.1.0",
+  "description": "express application monitoring tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arunthomasalex/healthcheck-express-client.git"
+  },
+  "keywords": [
+    "healthcheck",
+    "monitoring",
+    "express",
+    "healthcheck-client",
+    "healthcheck-express",
+    "healthcheck-express-client"
+  ],
+  "author": "Arun Thomas Alex",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arunthomasalex/healthcheck-express-client/issues"
+  },
+  "homepage": "https://github.com/arunthomasalex/healthcheck-express-client#readme"
+}
