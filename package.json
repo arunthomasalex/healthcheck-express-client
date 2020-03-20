@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/arunthomasalex/healthcheck-express-client/issues"
   },
-  "homepage": "https://github.com/arunthomasalex/healthcheck-express-client#readme"
+  "homepage": "https://github.com/arunthomasalex/healthcheck-express-client#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
