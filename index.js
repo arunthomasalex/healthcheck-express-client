@@ -1,31 +1,13 @@
-const express = require('express');
-
-const health = (req, res) => {
-    res.send({
-        uptime: process.uptime(),
-        startTime: healthCheckClient.starttime,
-        status: "Healthy"
-    });
-};
-
-const details = (req, res) => {
-    res.send({
-        memoryUsage: process.memoryUsage()
-    });
-};
-
-const router =  express.Router();
-router.get('/health', health);
-router.get('/details', details);
-
+const { getRouter } = require('./routes'); 
 
 class HealthCheckClient {
     constructor(){
         this.starttime = new Date().getTime();
+        Object.freeze(this.starttime);
     }
 
-    setUpHealth(app) {   
-        app.use('/actuator', router);
+    addHealthCheck(app) {   
+        app.use('/actuator', getRouter());
     }
 }
 
